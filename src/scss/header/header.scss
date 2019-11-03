@@ -1,4 +1,31 @@
 .header {
+  display: flex;
+  align-items: center;
+
+  &-logo {
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 106px;
+    height: 40px;
+    display: block;
+  }
+
+  &__nav {
+
+    flex-grow: 1;
+    text-align: right;
+
+    &-link {
+      font-size: 1.4em;
+      line-height: 1.215;
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__btn-entry {
     width: 87px;
     color: #bc9cff;
@@ -8,5 +35,6 @@
     width: 196px;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #fff;
+    margin-left: 20px;
   }
 }
