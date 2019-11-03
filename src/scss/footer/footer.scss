@@ -1,0 +1,38 @@
+.footer {
+  &__nav {
+    display: flex;
+
+    &-logo {
+      background-image: url("../img/logo.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 106px;
+      height: 40px;
+      display: block;
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: #1f2041;
+    }
+
+    &-item {
+      margin-top: 20px;
+    }
+
+    &-link {
+      font-size: 1.4em;
+      line-height: 1.215;
+    }
+
+    &-text {
+      font-size: 1.4em;
+      line-height: 1.72em;
+      color: rgba(31, 32, 65, 0.75);
+      width: 260px;
+    }
+  }
+}
