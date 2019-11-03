@@ -13,14 +13,16 @@ html(lang='ru')
           div.filter__date-arrive
             h4.filter__title Даты пребывания в отеле
             input(type="text" placeholder="19 авг - 23 авг" class="input filter__input")
-          div.filter__guests
+            i(class="material-icons filter__icon-arrow") keyboard_arrow_down
+          div.filter__box
             h4.filter__title Гости
             input(type="text" placeholder="3 гостя, 1 младенец" class="input filter__input")
+            i(class="material-icons filter__icon-arrow") keyboard_arrow_down
           div.filter__range-price
             h4.filter__title Диапазон цены
             span 5000 - 10000
           input(type="range" id="range-aside" class="input filter__input")
-          label(for="range-aside") Стоимость за сутки пребывания в номере
+          label( class="filter__range-label" for="range-aside") Стоимость за сутки пребывания в номере
           h4(class="filter__title filter__title_mt-30") Checkbox Buttons
           section(class="checkbox-container")
             div.checkbox-container__box
@@ -42,9 +44,13 @@ html(lang='ru')
               input(type="checkbox"  id="checkbox-aside5" class="input filter__input-checkbox")
               label(for="checkbox-aside5" class="filter__label") Помощник для инвалидов
               span.filter__text На 1 этаже вас встретит специалист  и проводит до номера.
-          h4(class="filter__title filter__title_mt-30") Удобства номера
-          input(type="text" placeholder="2 спальни, 2 кровати" class="input filter__input")
-          h4(class="filter__title filter__title_mt-30") Дополнительные удобства
+          div.filter__box
+            h4(class="filter__title filter__title_mt-30") Удобства номера
+            input(type="text" placeholder="2 спальни, 2 кровати" class="input filter__input")
+            i(class="material-icons filter__icon-arrow") keyboard_arrow_down
+          div.filter__box
+            h4(class="filter__title") Дополнительные удобства
+            i(class="material-icons filter__icon-arrow filter__icon-arrow_custom_position") keyboard_arrow_down
           section(class="checkbox-container")
             div.checkbox-container__box
               input(type="checkbox"  id="checkbox-aside6" class="input filter__input-checkbox")
