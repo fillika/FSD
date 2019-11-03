@@ -1,0 +1,21 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Webpack 4 template
+  body
+    include ../include/header.pug
+    main(class="entry")
+      div(class="search-form entry__search-form")
+        form
+          h2.entry__title  Войти
+          input(type="text" placeholder="Email" class="input entry__input")
+          input(type="password" placeholder="Пароль" class="input entry__input")
+          a(href="#" class="button entry__button") Войти
+            <i class="material-icons entry__material-icons">arrow_forward</i>
+          footer.entry__footer
+            span.entry__text Уже есть аккаунт на Toxin
+            a(href="#" class="button entry__entry-button") Создать
+    include ../include/footer.pug

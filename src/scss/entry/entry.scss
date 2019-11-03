@@ -1,0 +1,74 @@
+.entry {
+  height: 702px;
+  max-width: 1440px;
+  background-image: url("../img/reg_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  margin: auto;
+  position: relative;
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 2.4em;
+    line-height: 1.25em;
+    color: #1f2041;
+    margin-bottom: 20px;
+  }
+
+  &__small-title {
+    font-size: 1.2em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: #1f2041;
+    padding-bottom: 5px;
+  }
+
+  &__search-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 163px;
+  }
+
+  &__button {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    color: #fff;
+    padding: 12.5px 0;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  &__entry-button {
+    width: 99px;
+    padding: 12.5px 0;
+  }
+
+  &__material-icons {
+    position: absolute;
+    color: #fff;
+    right: 10px;
+    top: 9px;
+  }
+
+  &__text {
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: #000000;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__date-brth,
+  &__entry-data {
+    margin-top: 20px;
+  }
+}
