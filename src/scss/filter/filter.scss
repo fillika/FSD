@@ -1,15 +1,11 @@
 .filter {
 
-  label {
-    display: block;
-  }
-
   &__title {
     font-size: 1.2em;
     line-height: 1.25em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #1F2041;
+    color: #1f2041;
   }
 
   &__aside {
@@ -18,5 +14,17 @@
 
   &__input-checkbox {
     display: none;
+  }
+}
+
+.checkbox-container {
+  &__label {
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__box {
+    position: relative;
   }
 }
