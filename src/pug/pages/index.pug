@@ -9,7 +9,24 @@ html(lang='ru')
     include ../include/header.pug
     main(class="search-main")
       div.wrapper
-        div.search-form
+        div(class="search-form search-main__form")
+          form
+            h2.search-main__title Найдём номера под ваши пожелания
+            div.search-main__dates
+              div.search-form__dates-arrive
+                h4.search-form__title прибытие
+                input(type="text" placeholder="ДД.ММ.ГГГГ" class="input search-form__input")
+                <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+              div.search-form__dates-left
+                h4.search-form__title выезд
+                input(type="text" placeholder="ДД.ММ.ГГГГ" class="input search-form__input")
+                <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+            div.search-main__guests
+              h4.search-form__title гости
+              input(type="text" placeholder="Сколько гостей" class="input search-form__input")
+              <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+            a(href="#" class="button search-main__button") подобрать номер
+              <i class="material-icons search-main__material-icons">arrow_forward</i>
         p.search-main__text Лучшие номера для вашей работы, отдыха и просто вдохновения
 
 
