@@ -16,6 +16,7 @@ const allPlugins = [
 	createPage("index"),
 	createPage("registration"),
 	createPage("entry"),
+	createPage("filter"),
   new MiniCssExtractPlugin({
     filename: "style.css"
   }),

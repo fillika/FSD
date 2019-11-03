@@ -1,0 +1,22 @@
+.filter {
+
+  label {
+    display: block;
+  }
+
+  &__title {
+    font-size: 1.2em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1F2041;
+  }
+
+  &__aside {
+    width: 266px;
+  }
+
+  &__input-checkbox {
+    display: none;
+  }
+}
