@@ -8,4 +8,31 @@ html(lang='ru')
   body
     include ../include/header.pug
     main(class="registration")
-    include ../include/footer.pug
+      div(class="search-form registration__search-form")
+        form
+          h2.registration__title  Регистрация аккаунта
+          input(type="text" placeholder="Имя" class="input")
+          input(type="text" placeholder="Фамилия" class="input")
+          div.registration__radio-buttons
+            label(class="registration__label" for="registration-1") Мужчина
+            input(type="radio" class="registration__radio" id="registration-1" name="gender")
+            label(class="registration__label" for="registration-2") Женщина
+            input(type="radio" class="registration__radio" id="registration-2" name="gender")
+          div.registration__date-brth
+            h4.registration__small-title дата рождения
+            input(type="text" placeholder="ДД.ММ.ГГГГ" class="input registration__input")
+          div.registration__entry-data
+            h4.registration__small-title данные для входа в сервис
+            input(type="text" placeholder="Email" class="input registration__input")
+            input(type="password" placeholder="Пароль" class="input registration__input")
+            label(class="registration__label" for="registration-3") Получать спецпредложения
+            input(type="checkbox" class="registration__checkbox" id="registration-3")
+          a(href="#" class="button registration__button") подобрать номер
+            <i class="material-icons registration__material-icons">arrow_forward</i>
+          footer.registration__footer
+            span.registration__text Уже есть аккаунт на Toxin
+            a(href="#" class="button registration__entry-button") Войти
+
+
+
+  include ../include/footer.pug

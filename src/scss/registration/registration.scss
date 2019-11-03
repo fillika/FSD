@@ -1,0 +1,56 @@
+.registration {
+  height: 702px;
+  max-width: 1440px;
+  background-image: url("../img/reg_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  margin: auto;
+  position: relative;
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 2.4em;
+    line-height: 1.25em;
+    color: #1F2041;
+    margin-bottom: 20px;
+  }
+
+  &__small-title {
+    font-size: 1.2em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: #1F2041;
+    padding-bottom: 5px;
+  }
+
+  &__search-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+  }
+
+  &__button {
+    margin-top: 31px;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    color: #fff;
+    padding: 12.5px 0;
+    position: relative;
+  }
+
+  &__entry-button {
+    width: 99px;
+    padding: 12.5px 0;
+  }
+
+  &__material-icons {
+    position: absolute;
+    color: #fff;
+    right: 10px;
+    top: 9px;
+  }
+}
