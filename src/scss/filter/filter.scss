@@ -1,4 +1,6 @@
 .filter {
+  display: flex;
+
   &__input {
     margin-top: 5px;
   }
@@ -61,7 +63,6 @@
     &:checked + .filter__label::before {
       display: block;
     }
-    
   }
 
   &__label {
@@ -177,5 +178,35 @@
   &__box {
     position: relative;
     margin-top: 12px;
+  }
+}
+
+.room-var {
+  &__title {
+  }
+
+  &__container {
+  }
+}
+
+.card-room {
+  width: 270px;
+  height: 257px;
+
+  &__star {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.photo-slider {
+  &__item {
+    width: 270px;
+    height: 151px;
+    background-image: url("../img/1_room.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px 4px 0 0;
   }
 }
