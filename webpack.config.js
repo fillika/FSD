@@ -65,7 +65,7 @@ const imgLoader = {
         },
         pngquant: {
           quality: [0.65, 0.9],
-          speed: 8
+          speed: 7
         },
         gifsicle: {
           interlaced: false
