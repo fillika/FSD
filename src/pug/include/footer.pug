@@ -38,8 +38,21 @@ footer(class="footer wrapper")
       h4.footer__nav-title Подписка
       p.footer__nav-text Получайте специальные предложения и новости сервиса
       div.input-container
-        input(type="text" class="input footer__input" placeholder="Email")
-        a(href="#" class="footer__arrow-right")
-          <i class="material-icons footer__material-icons">arrow_forward</i>
+        form
+          input(type="text" class="input footer__input" placeholder="Email")
+          a(href="#" class="footer__arrow-right")
+            <i class="material-icons footer__material-icons">arrow_forward</i>
 
-  section(class="footer__copyright")
+  section(class="copyright footer__copyright")
+    div.copyright-text Copyright © 2019 Toxin отель. Все права защищены.
+    div.copyright-icons
+      ul.copyright__list
+        li.copyright__list-item
+          a(class="copyright__list-link" href="#")
+            <i class="fab fa-twitter copyright__fab"></i>
+        li.copyright__list-item
+          a(class="copyright__list-link" href="#")
+            <i class="fab fa-facebook-square copyright__fab"></i>
+        li.copyright__list-item
+          a(class="copyright__list-link" href="#")
+            <i class="fab fa-instagram copyright__fab"></i>
