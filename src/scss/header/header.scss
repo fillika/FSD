@@ -11,14 +11,24 @@
     display: block;
   }
 
-  &__nav {
+  &__icon-arrow {
+    position: relative;
+    top: 6px;
+  }
 
+  &__nav {
     flex-grow: 1;
     text-align: right;
+    padding-bottom: 5px;
 
     &-link {
       font-size: 1.4em;
       line-height: 1.215;
+      margin-left: 20px;
+
+      &:last-child {
+        margin-right: 20px;
+      }
     }
   }
   &__buttons {
