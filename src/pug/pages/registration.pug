@@ -16,10 +16,10 @@ html(lang='ru')
           div.registration__radio-buttons
             span.box-container
               input(type="radio" class="registration__radio" id="registration-1" name="gender")
-              label(class="registration__label" for="registration-1") Мужчина
+              label(class="registration__label-gender" for="registration-1") Мужчина
             span.box-container
               input(type="radio" class="registration__radio" id="registration-2" name="gender")
-              label(class="registration__label" for="registration-2") Женщина
+              label(class="registration__label-gender" for="registration-2") Женщина
           div.registration__date-brth
             h4.registration__small-title дата рождения
             input(type="text" placeholder="ДД.ММ.ГГГГ" class="input registration__input")
@@ -29,7 +29,7 @@ html(lang='ru')
             input(type="password" placeholder="Пароль" class="input registration__input")
             span.box-container
               input(type="checkbox" class="registration__checkbox" id="registration-3")
-              label(class="registration__label" for="registration-3") Получать спецпредложения
+              label(class="registration__label-offer" for="registration-3") Получать спецпредложения
           a(href="#" class="button registration__button") подобрать номер
             <i class="material-icons registration__material-icons">arrow_forward</i>
           footer.registration__footer
