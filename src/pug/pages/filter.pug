@@ -9,58 +9,61 @@ html(lang='ru')
     include ../include/header.pug
     main(class="wrapper filter")
       aside.filter__aside
-        h4.filter__title Даты пребывания в отеле
-        input(type="text" placeholder="19 авг - 23 авг" class="input filter__input")
-        h4.filter__title Гости
-        input(type="text" placeholder="3 гостя, 1 младенец" class="input filter__input")
-        h4.filter__title Диапазон цены
-        input(type="range" id="range-aside" class="input filter__input")
-        label(for="range-aside") Стоимость за сутки пребывания в номере
-        h4.filter__title Checkbox Buttons
-        section.checkbox-container
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside1" class="input filter__input-checkbox")
-            label(for="checkbox-aside1" class="checkbox-container__label") Можно курить
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside2" class="input filter__input-checkbox")
-            label(for="checkbox-aside2" class="checkbox-container__label") Можно с питомцами
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside3" class="input filter__input-checkbox")
-            label(for="checkbox-aside3" class="checkbox-container__label") Можно пригласить гостей (до 10 человек)
-        h4.filter__title Доступность
-        input(type="checkbox"  id="checkbox-aside4" class="input filter__input-checkbox")
-        label(for="checkbox-aside4" class="filter__label") Широкий коридор
-        span.filter__text Ширина коридоров в номере не менее 91 см.
-        input(type="checkbox"  id="checkbox-aside5" class="input filter__input-checkbox")
-        label(for="checkbox-aside5" class="filter__label") Помощник для инвалидов
-        span.filter__text На 1 этаже вас встретит специалист  и проводит до номера.
-        h4.filter__title Удобства номера
-        input(type="text" placeholder="2 спальни, 2 кровати" class="input filter__input")
-        h4.filter__title Дополнительные удобства
-        section.checkbox-container
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside6" class="input filter__input-checkbox")
-            label(for="checkbox-aside6" class="checkbox-container__label") Завтрак
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside7" class="input filter__input-checkbox")
-            label(for="checkbox-aside7" class="checkbox-container__label") Письменный стол
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside8" class="input filter__input-checkbox")
-            label(for="checkbox-aside8" class="checkbox-container__label") Стул для кормления
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside9" class="input filter__input-checkbox")
-            label(for="checkbox-aside9" class="checkbox-container__label") Кроватка
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside10" class="input filter__input-checkbox")
-            label(for="checkbox-aside10" class="checkbox-container__label") Телевизор
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside11" class="input filter__input-checkbox")
-            label(for="checkbox-aside11" class="checkbox-container__label") Шампунь
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside12" class="input filter__input-checkbox")
-            label(for="checkbox-aside12" class="checkbox-container__label") Телевизор
-          div.checkbox-container__box
-            input(type="checkbox"  id="checkbox-aside13" class="input filter__input-checkbox")
-            label(for="checkbox-aside13" class="checkbox-container__label") Шампунь
+        form
+          h4.filter__title Даты пребывания в отеле
+          input(type="text" placeholder="19 авг - 23 авг" class="input filter__input")
+          h4.filter__title Гости
+          input(type="text" placeholder="3 гостя, 1 младенец" class="input filter__input")
+          div.filter__range-price
+            h4.filter__title Диапазон цены
+            span 5000 - 10000
+          input(type="range" id="range-aside" class="input filter__input")
+          label(for="range-aside") Стоимость за сутки пребывания в номере
+          h4.filter__title Checkbox Buttons
+          section.checkbox-container
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside1" class="input filter__input-checkbox")
+              label(for="checkbox-aside1" class="checkbox-container__label") Можно курить
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside2" class="input filter__input-checkbox")
+              label(for="checkbox-aside2" class="checkbox-container__label") Можно с питомцами
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside3" class="input filter__input-checkbox")
+              label(for="checkbox-aside3" class="checkbox-container__label") Можно пригласить гостей (до 10 человек)
+          h4.filter__title Доступность
+          input(type="checkbox"  id="checkbox-aside4" class="input filter__input-checkbox")
+          label(for="checkbox-aside4" class="filter__label") Широкий коридор
+          span.filter__text Ширина коридоров в номере не менее 91 см.
+          input(type="checkbox"  id="checkbox-aside5" class="input filter__input-checkbox")
+          label(for="checkbox-aside5" class="filter__label") Помощник для инвалидов
+          span.filter__text На 1 этаже вас встретит специалист  и проводит до номера.
+          h4.filter__title Удобства номера
+          input(type="text" placeholder="2 спальни, 2 кровати" class="input filter__input")
+          h4.filter__title Дополнительные удобства
+          section.checkbox-container
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside6" class="input filter__input-checkbox")
+              label(for="checkbox-aside6" class="checkbox-container__label") Завтрак
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside7" class="input filter__input-checkbox")
+              label(for="checkbox-aside7" class="checkbox-container__label") Письменный стол
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside8" class="input filter__input-checkbox")
+              label(for="checkbox-aside8" class="checkbox-container__label") Стул для кормления
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside9" class="input filter__input-checkbox")
+              label(for="checkbox-aside9" class="checkbox-container__label") Кроватка
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside10" class="input filter__input-checkbox")
+              label(for="checkbox-aside10" class="checkbox-container__label") Телевизор
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside11" class="input filter__input-checkbox")
+              label(for="checkbox-aside11" class="checkbox-container__label") Шампунь
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside12" class="input filter__input-checkbox")
+              label(for="checkbox-aside12" class="checkbox-container__label") Телевизор
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside13" class="input filter__input-checkbox")
+              label(for="checkbox-aside13" class="checkbox-container__label") Шампунь
 
     include ../include/footer.pug
