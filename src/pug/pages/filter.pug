@@ -10,17 +10,19 @@ html(lang='ru')
     main(class="wrapper filter")
       aside.filter__aside
         form
-          h4.filter__title Даты пребывания в отеле
-          input(type="text" placeholder="19 авг - 23 авг" class="input filter__input")
-          h4.filter__title Гости
-          input(type="text" placeholder="3 гостя, 1 младенец" class="input filter__input")
+          div.filter__date-arrive
+            h4.filter__title Даты пребывания в отеле
+            input(type="text" placeholder="19 авг - 23 авг" class="input filter__input")
+          div.filter__guests
+            h4.filter__title Гости
+            input(type="text" placeholder="3 гостя, 1 младенец" class="input filter__input")
           div.filter__range-price
             h4.filter__title Диапазон цены
             span 5000 - 10000
           input(type="range" id="range-aside" class="input filter__input")
           label(for="range-aside") Стоимость за сутки пребывания в номере
-          h4.filter__title Checkbox Buttons
-          section.checkbox-container
+          h4(class="filter__title filter__title_mt-30") Checkbox Buttons
+          section(class="checkbox-container")
             div.checkbox-container__box
               input(type="checkbox"  id="checkbox-aside1" class="input filter__input-checkbox")
               label(for="checkbox-aside1" class="checkbox-container__label") Можно курить
@@ -30,17 +32,20 @@ html(lang='ru')
             div.checkbox-container__box
               input(type="checkbox"  id="checkbox-aside3" class="input filter__input-checkbox")
               label(for="checkbox-aside3" class="checkbox-container__label") Можно пригласить гостей (до 10 человек)
-          h4.filter__title Доступность
-          input(type="checkbox"  id="checkbox-aside4" class="input filter__input-checkbox")
-          label(for="checkbox-aside4" class="filter__label") Широкий коридор
-          span.filter__text Ширина коридоров в номере не менее 91 см.
-          input(type="checkbox"  id="checkbox-aside5" class="input filter__input-checkbox")
-          label(for="checkbox-aside5" class="filter__label") Помощник для инвалидов
-          span.filter__text На 1 этаже вас встретит специалист  и проводит до номера.
-          h4.filter__title Удобства номера
+          h4(class="filter__title filter__title_mt-30") Доступность
+          section(class="checkbox-container")
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside4" class="input filter__input-checkbox")
+              label(for="checkbox-aside4" class="filter__label") Широкий коридор
+              span.filter__text Ширина коридоров в номере не менее 91 см.
+            div.checkbox-container__box
+              input(type="checkbox"  id="checkbox-aside5" class="input filter__input-checkbox")
+              label(for="checkbox-aside5" class="filter__label") Помощник для инвалидов
+              span.filter__text На 1 этаже вас встретит специалист  и проводит до номера.
+          h4(class="filter__title filter__title_mt-30") Удобства номера
           input(type="text" placeholder="2 спальни, 2 кровати" class="input filter__input")
-          h4.filter__title Дополнительные удобства
-          section.checkbox-container
+          h4(class="filter__title filter__title_mt-30") Дополнительные удобства
+          section(class="checkbox-container")
             div.checkbox-container__box
               input(type="checkbox"  id="checkbox-aside6" class="input filter__input-checkbox")
               label(for="checkbox-aside6" class="checkbox-container__label") Завтрак
