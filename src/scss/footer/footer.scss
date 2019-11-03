@@ -1,6 +1,28 @@
 .footer {
+  &__input {
+    margin-top: 20px;
+  }
+
+  &__arrow-right {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+  }
+
+  &__material-icons {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
   &__nav {
     display: flex;
+    justify-content: space-between;
+    margin-top: 104px;
 
     &-logo {
       background-image: url("../img/logo.svg");
@@ -33,6 +55,7 @@
       line-height: 1.72em;
       color: rgba(31, 32, 65, 0.75);
       width: 260px;
+      margin-top: 20px;
     }
   }
 }
