@@ -14,10 +14,12 @@ html(lang='ru')
           input(type="text" placeholder="Имя" class="input")
           input(type="text" placeholder="Фамилия" class="input")
           div.registration__radio-buttons
-            label(class="registration__label" for="registration-1") Мужчина
-            input(type="radio" class="registration__radio" id="registration-1" name="gender")
-            label(class="registration__label" for="registration-2") Женщина
-            input(type="radio" class="registration__radio" id="registration-2" name="gender")
+            span.box-container
+              input(type="radio" class="registration__radio" id="registration-1" name="gender")
+              label(class="registration__label" for="registration-1") Мужчина
+            span.box-container
+              input(type="radio" class="registration__radio" id="registration-2" name="gender")
+              label(class="registration__label" for="registration-2") Женщина
           div.registration__date-brth
             h4.registration__small-title дата рождения
             input(type="text" placeholder="ДД.ММ.ГГГГ" class="input registration__input")
@@ -25,8 +27,9 @@ html(lang='ru')
             h4.registration__small-title данные для входа в сервис
             input(type="text" placeholder="Email" class="input registration__input")
             input(type="password" placeholder="Пароль" class="input registration__input")
-            label(class="registration__label" for="registration-3") Получать спецпредложения
-            input(type="checkbox" class="registration__checkbox" id="registration-3")
+            span.box-container
+              input(type="checkbox" class="registration__checkbox" id="registration-3")
+              label(class="registration__label" for="registration-3") Получать спецпредложения
           a(href="#" class="button registration__button") подобрать номер
             <i class="material-icons registration__material-icons">arrow_forward</i>
           footer.registration__footer
