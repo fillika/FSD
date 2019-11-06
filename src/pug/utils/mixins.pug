@@ -1,6 +1,22 @@
-mixin room()
+mixin room(number, luxe, price, star1, star2, reviewNum)
   div.card-room
     div.photo-slider
       div.photo-slider__item
     div.card-room__info
       span.card-room__number
+        span.card-room__n №
+        span.card-room__counts=number
+      span.card-room__luxe=luxe
+      span.card-room__price
+        span.card-room__cost=price
+        span.card-room__text в сутки
+    div.card-room__reviews
+      span.card-room__stars
+        i(class="material-icons material-icons__star") star
+        i(class="material-icons material-icons__star") star
+        i(class="material-icons material-icons__star") star
+        i(class="material-icons material-icons__star")=star1
+        i(class="material-icons material-icons__star")=star2
+      span.card-room__total-revies
+        span.card-room__reviev-count=reviewNum
+        span.card-room__reviev-text отзывов
