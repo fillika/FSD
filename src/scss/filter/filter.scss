@@ -200,10 +200,69 @@
   width: 270px;
   height: 257px;
 
-  &__star {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+  &__counts,
+  &__n {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: #1f2041;
+  }
+
+  &__n {
+    font-size: 1em;
+  }
+
+  &__cost {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__text {
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__reviev-count,
+  &__reviev-text {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__reviev-text {
+    font-weight: normal;
+  }
+
+  &__info {
+    width: 230px;
+    margin: 20px auto 0px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  }
+
+  &__reviews {
+    width: 230px;
+    margin: auto;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__luxe {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    padding-left: 5px;
   }
 }
 
@@ -215,5 +274,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 4px 4px 0 0;
+  }
+}
+
+.material-icons {
+  &__star {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
