@@ -44,3 +44,50 @@
     background-image: url("../img/rd_sm_2.png");
   }
 }
+
+.main-info {
+  &__title {
+    font-weight: bold;
+    font-size: 1.9em;
+    line-height: 1.275em;
+    color: #1f2041;
+  }
+
+  &__about-box {
+    width: 280px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  }
+
+  &__about-box:last-child {
+    border-bottom: none;
+  }
+
+  &__about-text {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  &__about-title,
+  &__about-descritpion {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.715em;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__about-descritpion {
+    font-weight: normal;
+  }
+
+  &__icons {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4.8em;
+    line-height: 0.855em;
+    text-align: center;
+    position: relative;
+    top: 6px;
+  }
+}

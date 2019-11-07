@@ -13,6 +13,36 @@ html(lang='ru')
         div(class="photo-small details-room__photo-small")
           div.photo-small__box
           div.photo-small__box
-      section.details-room__content
+      section(class="main-info details-room__content")
+        div.main-info__about
+          div.main-info__about-container
+            h2.main-info__title Сведения о номере
+            div.main-info__about-box
+              <i class="material-icons main-info__icons">tag_faces</i>
+              div.main-info__about-text
+                p.main-info__about-title Комфорт
+                p.main-info__about-descritpion Шумопоглощающие стены
+            div.main-info__about-box
+              <i class="material-icons main-info__icons">location_city</i>
+              div.main-info__about-text
+                p.main-info__about-title Удобство
+                p.main-info__about-descritpion Окно в каждой из спален
+            div.main-info__about-box
+              <i class="material-icons main-info__icons">whatshot</i>
+              div.main-info__about-text
+                p.main-info__about-title Уют
+                p.main-info__about-descritpion Номер оснащён камином
+        div.main-info__statistic
+          h2.main-info__title Впечатления от номера
+          div.main-info__statistic-circle
+          ul.main-info__list
+            li.main-info__list-item Великолепно
+            li.main-info__list-item Хорошо
+            li.main-info__list-item Удовлетворительно
+            li.main-info__list-item Разочарован
+
+
+
+
 
     include ../include/footer.pug
