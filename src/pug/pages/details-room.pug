@@ -15,7 +15,7 @@ html(lang='ru')
           div.photo-small__box
       section(class="main-info details-room__content")
         div.main-info__about
-          div.main-info__about-container
+          section.main-info__about-container
             h2.main-info__title Сведения о номере
             div.main-info__about-box
               <i class="material-icons main-info__icons">tag_faces</i>
@@ -32,7 +32,7 @@ html(lang='ru')
               div.main-info__about-text
                 p.main-info__about-title Уют
                 p.main-info__about-descritpion Номер оснащён камином
-          div.main-info__statistic
+          section.main-info__statistic
             h2.main-info__title Впечатления от номера
             div.main-info__diagramm
             ul.main-info__list
@@ -40,9 +40,27 @@ html(lang='ru')
               li.main-info__list-item Хорошо
               li.main-info__list-item Удовлетворительно
               li.main-info__list-item Разочарован
-
-
-
-
+          section.main-info__reviews
+            h2.main-info__title Отзывы посетителей номера
+            article.main-info__reviews-box
+              header.main-info__reviews-header
+                span.main-info__img-box
+                  img(class="main-info__img-avatar" src="../img/murad.png")
+                span.main-info__box
+                  h6.main-info__box-name Мурад Сарафанов
+                  span.main-info__box-date 5 дней назад
+              section.main-info__reviews-content
+                div.main-info__reviews-likes <i class="material-icons main-info__favorite-icon">favorite</i> 12
+                div.main-info__reviews-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+            article.main-info__reviews-box
+              header.main-info__reviews-header
+                span.main-info__img-box
+                  img(class="main-info__img-avatar" src="../img/girl.png")
+                span.main-info__box
+                  h6.main-info__box-name Патрисия Стёклышкова
+                  span.main-info__box-date Неделю назад
+              section.main-info__reviews-content
+                div.main-info__reviews-likes <i class="material-icons main-info__favorite-icon">favorite</i> 5
+                div.main-info__reviews-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
 
     include ../include/footer.pug

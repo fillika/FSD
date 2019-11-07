@@ -50,6 +50,7 @@
   &__about {
     width: 61.5%;
     display: flex;
+    flex-wrap: wrap;
 
     &-container {
       width: 280px;
@@ -87,6 +88,10 @@
 
   &__about-descritpion {
     font-weight: normal;
+  }
+
+  &__statistic {
+    margin-left: 11.4%;
   }
 
   &__icons {
@@ -136,12 +141,75 @@
       }
 
       &:nth-child(3)::before {
-        background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       }
 
       &:nth-child(4)::before {
-        background-image:  linear-gradient(180deg, #919191 0%, #3D4975 100%);
+        background-image: linear-gradient(180deg, #919191 0%, #3d4975 100%);
       }
     }
+  }
+
+  &__img-box,
+  &__box {
+    display: inline-block;
+  }
+
+  &__box {
+    margin-left: 12px;
+  }
+
+  &__img-box {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__box-name,
+  &__box-date,
+  &__reviews-text {
+    font-size: 1.4em;
+    line-height: 1.715em;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__reviews {
+    margin-top: 30px;
+
+    &-box {
+      margin-top: 20px;
+    }
+  }
+
+  &__reviews-text {
+    margin-left: 60px;
+  }
+
+  &__reviews-content {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  &__reviews-likes {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #bc9cff;
+    padding: 3px 5px;
+    text-align: left;
+    top: 5px;
+    left: 4px;
+  }
+
+  &__favorite-icon {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1em;
+    line-height: 0.9em;
+    position: relative;
+    top: 1px;
+    left: 0;
+    padding-right: 4px;
   }
 }

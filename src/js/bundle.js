@@ -10,3 +10,5 @@ import "../scss/index.scss";
 
 /* img import */
 
+import img from "../img/murad.png"
+import img1 from "../img/girl.png"
