@@ -223,4 +223,55 @@
     left: 0;
     padding-right: 4px;
   }
+
+  &__extra-info {
+    margin-top: 30px;
+  }
+
+  &__rules {
+    max-width: 263px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 80px;
+  }
+
+  &__cancel {
+    max-width: 340px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__text {
+    font-size: 1.4em;
+    line-height: 1.715em;
+    color: rgba(31, 32, 65, 0.75);
+    margin-top: 20px;
+  }
+}
+
+.list-rules {
+  margin-left: 20px;
+
+  &__item {
+    position: relative;
+    font-size: 1.4em;
+    line-height: 1.715em;
+    color: rgba(31, 32, 65, 0.75);
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(31, 32, 65, 0.25);
+      border-radius: 50%;
+      left: -20px;
+      top: 6px;
+    }
+  }
+
+  &_margin_top {
+    margin-top: 20px;
+  }
 }
