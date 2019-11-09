@@ -21,8 +21,9 @@
   }
 
   &__content {
-    max-width: 1160px;
+    max-width: 1190px;
     margin: 70px auto 0;
+    padding: 0 15px;
   }
 }
 
@@ -183,7 +184,6 @@
       font-size: 1.4em;
       line-height: 1em;
       color: rgba(31, 32, 65, 0.5);
-
     }
 
     &-box {
