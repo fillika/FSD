@@ -7,7 +7,6 @@
   border-radius: 4px;
   padding: 40px 30px 30px;
 
-
   &__dates-arrive,
   &__dates-left {
     width: 150px;
@@ -27,5 +26,25 @@
     top: 30px;
     right: 7px;
     cursor: pointer;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__price,
+  &__total-price {
+    font-size: 1.4em;
+    line-height: 1.715em;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__price {
+    width: 214px;
+    display: inline-block;
+  }
+
+  &__total-price {
+    float: right;
   }
 }

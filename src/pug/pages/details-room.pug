@@ -15,6 +15,42 @@ html(lang='ru')
           div.photo-small__box
       section(class="main-info details-room__content")
         div.main-info__about
+          div.search-form
+            header.search-form__header
+              span.search-form__number № 888
+                span.search-form__header-luxe люкс
+              span.search-form__header-price 9 900
+                span.search-form__header-in-day в сутки
+            div.search-main__dates
+              div.search-form__dates-arrive
+                h4.search-form__title прибытие
+                input(type="text" placeholder="ДД.ММ.ГГГГ" class="input search-form__input")
+                <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+              div.search-form__dates-left
+                h4.search-form__title выезд
+                input(type="text" placeholder="ДД.ММ.ГГГГ" class="input search-form__input")
+                <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+            div.search-main__guests
+              h4.search-form__title гости
+              input(type="text" placeholder="Сколько гостей" class="input search-form__input")
+              <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+
+
+            div.search-form__more-details
+              div.search-form__text
+                span.search-form__price 9 990₽ х 4 суток
+                span.search-form__total-price 39 960₽
+              div.search-form__text
+                span.search-form__price Сбор за услуги: скидка
+                span.search-form__total-price -2 179₽
+              div.search-form__text
+                span.search-form__price Сбор за дополнительные услуги
+                span.search-form__total-price 300₽
+              div.search-form__text
+                span.search-form__price Итого
+                span.search-form__total-price 38 081₽
+            a(href="filter.html" class="button search-main__button") Забронировать
+              <i class="material-icons search-main__material-icons">arrow_forward</i>
           section.main-info__about-container
             h2.main-info__title Сведения о номере
             div.main-info__about-box
