@@ -30,6 +30,33 @@
 
   &__text {
     margin-top: 10px;
+
+    &:last-child {
+      margin-top: 30px;
+      position: relative;
+
+      .search-form {
+        &__price,
+        &__total-price {
+          font-weight: bold;
+          font-size: 1.9em;
+          line-height: 1.25em;
+          color: #1f2041;
+          background-color: #fff;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 57%;
+        position: absolute;
+        bottom: 5px;
+        z-index: 1;
+        left: 59px;
+        border-bottom: 1px dashed;
+      }
+    }
   }
 
   &__price,
@@ -46,5 +73,32 @@
 
   &__total-price {
     float: right;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: #1f2041;
+  }
+
+  &__header-luxe {
+    font-weight: bold;
+    font-size: 0.855em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: #bc9cff;
+  }
+
+  &__header-price {
+    float: right;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__more-details {
+    margin-top: 20px;
   }
 }
