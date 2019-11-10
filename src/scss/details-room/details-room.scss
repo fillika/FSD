@@ -24,6 +24,7 @@
     max-width: 1190px;
     margin: 70px auto 0;
     padding: 0 15px;
+    position: relative;
   }
 }
 
@@ -56,6 +57,11 @@
     &-container {
       width: 280px;
     }
+  }
+
+  &__search-form {
+    position: absolute;
+    right: 0;
   }
 
   &__title {
