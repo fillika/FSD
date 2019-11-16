@@ -10,6 +10,10 @@
       margin-top: 10px;
     }
   }
+
+  .search-form {
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -20,8 +24,15 @@
 }
 
 @media screen and (max-width: 425px) {
-  .search-main__form {
+  .search-form {
     font-size: 8px;
     width: calc(100% - 30px);
+    left: 15px;
+    transform: translateX(0);
+  }
+
+  .entry__text,
+  .registration__text {
+    width: 120px;
   }
 }
