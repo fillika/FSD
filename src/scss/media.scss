@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px) {
+  .footer__nav {
+    flex-wrap: wrap;
+
+    &-container {
+      &:nth-child(1) {
+        order: 5;
+      }
+
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__nav {
+    flex-direction: column;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .search-main__form {
+    font-size: 8px;
+    width: calc(100% - 30px);
+  }
+}
