@@ -19,8 +19,31 @@ html(lang='ru')
             i(class="material-icons filter__icon-arrow") keyboard_arrow_down
           div.filter__box
             h4.filter__title Гости
-            input(type="text" placeholder="3 гостя, 1 младенец" class="input filter__input")
-            i(class="material-icons filter__icon-arrow") keyboard_arrow_down
+            div.guest-container
+              input(type="text" placeholder="Сколько гостей" class="input filter__input js-guest" readonly)
+              i(class="material-icons filter__icon-arrow") keyboard_arrow_down
+              div.guest-container__inner
+                div.guest-container__inner-category
+                  span.guest-container__inner-adult Взрослые
+                  span.counter
+                    span.minus -
+                    span.guest-container__number 0
+                    span.plus +
+                div.guest-container__inner-category
+                  span.guest-container__inner-adult Дети
+                  span.counter
+                    span.minus -
+                    span.guest-container__number 0
+                    span.plus +
+                div.guest-container__inner-category
+                  span.guest-container__inner-adult Младенцы
+                  span.counter
+                    span.minus -
+                    span.guest-container__number 0
+                    span.plus +
+                div.guest-container__inner-category
+                  a(href="#" class="guest-container__btn-clear") очистить
+                  a(href="#" class="guest-container__btn-apply") принять
           div.filter__range-price
             h4.filter__title Диапазон цены
             span 5000 - 10000
@@ -49,8 +72,31 @@ html(lang='ru')
               span.filter__text На 1 этаже вас встретит специалист  и проводит до номера.
           div.filter__box
             h4(class="filter__title filter__title_mt-30") Удобства номера
-            input(type="text" placeholder="2 спальни, 2 кровати" class="input filter__input")
-            i(class="material-icons filter__icon-arrow") keyboard_arrow_down
+            div.guest-container
+              input(type="text" placeholder="Сколько спальных мест" class="input filter__input js-bed" readonly)
+              i(class="material-icons filter__icon-arrow") keyboard_arrow_down
+              div.guest-container__inner
+                div.guest-container__inner-category
+                  span.guest-container__inner-adult Взрослые
+                  span.counter
+                    span.minus -
+                    span.guest-container__number 0
+                    span.plus +
+                div.guest-container__inner-category
+                  span.guest-container__inner-adult Дети
+                  span.counter
+                    span.minus -
+                    span.guest-container__number 0
+                    span.plus +
+                div.guest-container__inner-category
+                  span.guest-container__inner-adult Младенцы
+                  span.counter
+                    span.minus -
+                    span.guest-container__number 0
+                    span.plus +
+                div.guest-container__inner-category
+                  a(href="#" class="guest-container__btn-clear") очистить
+                  a(href="#" class="guest-container__btn-apply") принять
           div.filter__box
             h4(class="filter__title") Дополнительные удобства
             i(class="material-icons filter__icon-arrow filter__icon-arrow_custom_position") keyboard_arrow_down

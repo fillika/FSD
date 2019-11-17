@@ -55,7 +55,7 @@ class guestCounter {
     this.allOutput = this.container.querySelectorAll(
       ".guest-container__number"
     );
-    this.arrow = this.parent.querySelector(".search-form__arrow-down");
+    this.arrow = this.parent.querySelector(".material-icons");
     this.clearBtn = this.parent.querySelector(".guest-container__btn-clear");
     this.applyBtn = this.parent.querySelector(".guest-container__btn-apply");
 
@@ -143,5 +143,34 @@ class guestCounter {
     });
   }
 }
+class bedCounter extends guestCounter {
+  constructor(selector) {
+    super(selector);
+  }
+
+  apply() {
+    let count = 0;
+
+    this.applyBtn.addEventListener("click", event => {
+      event.preventDefault();
+      this.allOutput.forEach(item => {
+        const val = +item.textContent;
+        count = count + val;
+
+        if (count === 1) {
+          this.input.value = count + " спальное место";
+        } else if (count >= 2 && count <= 4) {
+          this.input.value = count + " спальных места";
+        } else {
+          this.input.value = count + " спальных мест";
+        }
+      });
+      count = 0;
+      this.container.classList.remove("show-guest");
+      this.arrow.style.transform = "rotate(0deg)";
+    });
+  }
+}
 
 const input = new guestCounter(".js-guest");
+const bedInput = new bedCounter(".js-bed");

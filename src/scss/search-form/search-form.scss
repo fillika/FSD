@@ -105,12 +105,13 @@
 
 .guest-container {
   position: relative;
-  .search-form__arrow-down {
+
+  .material-icons {
     top: 10px;
   }
 
   &__inner {
-    width: 320px;
+    width: 100%;
     height: 0;
     background: #fff;
     box-sizing: border-box;
