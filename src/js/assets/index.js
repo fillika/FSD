@@ -149,23 +149,51 @@ class bedCounter extends guestCounter {
   }
 
   apply() {
-    let count = 0;
+    let arr = [];
 
     this.applyBtn.addEventListener("click", event => {
       event.preventDefault();
-      this.allOutput.forEach(item => {
-        const val = +item.textContent;
-        count = count + val;
+      this.input.value = " ";
 
-        if (count === 1) {
-          this.input.value = count + " спальное место";
-        } else if (count >= 2 && count <= 4) {
-          this.input.value = count + " спальных места";
-        } else {
-          this.input.value = count + " спальных мест";
+      this.allOutput.forEach((item, index) => {
+        const val = +item.textContent;
+
+        if (val === 0) return;
+
+        if (index === 0) {
+          if (val === 1) {
+            arr.push(val + " спальня");
+          } else if (val >= 2 && val <= 4) {
+            arr.push(val + " спальни");
+          } else {
+            arr.push(val + " спален");
+          }
+        }
+        if (index === 1) {
+          if (val === 1) {
+            arr.push(val + " кровать");
+          } else if (val >= 2 && val <= 4) {
+            arr.push(val + " кровати");
+          } else {
+            arr.push(val + " кроватей");
+          }
+        }
+        if (index === 2) {
+          if (val === 1) {
+            arr.push(val + " ванная комната");
+          } else if (val >= 2 && val <= 4) {
+            arr.push(val + " ванные комнаты");
+          } else {
+            arr.push(val + " ванных комнат");
+          }
         }
       });
-      count = 0;
+
+      const str = arr.join(", ");
+
+      this.input.value = str;
+
+      arr = [];
       this.container.classList.remove("show-guest");
       this.arrow.style.transform = "rotate(0deg)";
     });
