@@ -23,8 +23,28 @@ html(lang='ru')
                 <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
             div.search-main__guests
               h4.search-form__title гости
-              input(type="text" placeholder="Сколько гостей" class="input search-form__input")
-              <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+              div.guest-container
+                input(type="text" placeholder="Сколько гостей" class="input search-form__input")
+                <i class="material-icons search-form__arrow-down">keyboard_arrow_down</i>
+                div.guest-container__inner
+                  div.guest-container__inner-category
+                    span.guest-container__inner-adult Взрослые
+                    span.counter
+                      span.plus -
+                      span.guest-container__number 0
+                      span.minus +
+                  div.guest-container__inner-category
+                    span.guest-container__inner-adult Дети
+                    span.counter
+                      span.plus -
+                      span.guest-container__number 0
+                      span.minus +
+                  div.guest-container__inner-category
+                    span.guest-container__inner-adult Младенцы
+                    span.counter
+                      span.plus -
+                      span.guest-container__number 0
+                      span.minus +
             a(href="filter.html" class="button search-main__button") подобрать номер
               <i class="material-icons search-main__material-icons">arrow_forward</i>
         p.search-main__text Лучшие номера для вашей работы, отдыха и просто вдохновения

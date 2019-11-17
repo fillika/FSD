@@ -102,3 +102,62 @@
     margin-top: 20px;
   }
 }
+
+.guest-container {
+  position: relative;
+
+  &__inner {
+    width: 320px;
+    height: 159px;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    padding: 0 7px 13px 15px;
+    position: absolute;
+    z-index: 5;
+
+    &-category {
+      height: 30px;
+      margin-top: 8px;
+    }
+
+    &-adult {
+      font-weight: bold;
+      font-size: 1.2em;
+      line-height: 2.25em;
+      text-align: center;
+      text-transform: uppercase;
+      color: #1f2041;
+    }
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin: 0 12px;
+  }
+}
+
+.plus,
+.minus {
+  font-size: 2.1em;
+  line-height: 1.3em;
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.counter {
+  float: right;
+}
