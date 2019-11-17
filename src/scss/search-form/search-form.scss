@@ -141,6 +141,22 @@
     color: #1f2041;
     margin: 0 12px;
   }
+
+  &__btn-clear,
+  &__btn-apply {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    padding-top: 8px;
+    float: left;
+  }
+
+  &__btn-apply {
+    color: #bc9cff;
+    float: right;
+  }
 }
 
 .plus,

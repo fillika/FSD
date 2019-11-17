@@ -46,3 +46,56 @@ window.addEventListener("load", () => {
 
   new Burger(burgerBtn);
 });
+
+class guestCounter {
+  constructor(selector) {
+    this.input = document.querySelector(selector);
+    this.parent = this.input.closest(".guest-container");
+    this.container = this.parent.querySelector(".guest-container__inner");
+
+    this.init();
+  }
+
+  init() {
+    this.input.addEventListener("click", event => {
+      if (this.container.classList.contains("show-guest")) return;
+
+      this.container.classList.add("show-guest");
+    });
+    this.plus();
+    this.minus();
+  }
+
+  plus() {
+    const allPlus = this.container.querySelectorAll(".plus");
+
+    allPlus.forEach(item => {
+      item.addEventListener("click", event => {
+        const parent = item.closest(".counter");
+        const out = parent.querySelector(".guest-container__number");
+
+        let value = +out.textContent;
+        out.innerHTML = value + 1;
+      });
+    });
+  }
+
+  minus() {
+    const allMinus = this.container.querySelectorAll(".minus");
+
+    allMinus.forEach(item => {
+      item.addEventListener("click", event => {
+        const parent = item.closest(".counter");
+        const out = parent.querySelector(".guest-container__number");
+
+        let value = +out.textContent;
+
+        if (value === 0) return;
+
+        out.innerHTML = value - 1;
+      });
+    });
+  }
+}
+
+const input = new guestCounter(".js-guest");
