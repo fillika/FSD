@@ -1,6 +1,3 @@
-import $ from "jquery";
-import "popper.js";
-
 window.addEventListener("load", () => {
   class Burger {
     constructor(elem) {
@@ -202,3 +199,4 @@ class bedCounter extends guestCounter {
 
 const input = new guestCounter(".js-guest");
 const bedInput = new bedCounter(".js-bed");
+
