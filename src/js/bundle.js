@@ -3,10 +3,11 @@ const path = require("path");
 /* Libs */
 import "popper.js";
 import "ion-rangeslider";
+import "./assets/datepicker.min"
 
 /* JS files */
-import "./assets/index";
 import "./assets/plugins";
+import "./assets/index";
 
 /* Styles */
 import "../css/index.css";

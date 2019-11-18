@@ -5,7 +5,7 @@
   border-radius: 4px;
   font-size: 1.4em;
   line-height: 1.72em;
-  color: rgba(31, 32, 65, 0.25);
+  color: #000;
   height: 44px;
   padding-left: 15px;
   width: 100%;
@@ -13,4 +13,44 @@
 
 .input-container {
   position: relative;
+}
+
+.dt-main {
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  width: 318px;
+}
+
+.dt-second {
+  width: 266px;
+}
+
+.datepicker--buttons {
+  flex-direction: row-reverse;
+}
+
+.datepicker--button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.85em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+
+  color: rgba(31, 32, 65, 0.5);
+}
+
+span[data-action="today"] {
+  color: #bc9cff;
+}
+
+.datepicker--nav-title {
+  font-weight: bold;
+  font-size: 1.35em;
+  line-height: 1.25em;
+  text-align: center;
+  color: #1f2041;
 }

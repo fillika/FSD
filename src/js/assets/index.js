@@ -140,6 +140,7 @@ class guestCounter {
     });
   }
 }
+
 class bedCounter extends guestCounter {
   constructor(selector) {
     super(selector);
