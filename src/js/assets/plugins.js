@@ -27,7 +27,7 @@ const config = {
   minDate: new Date(),
   clearButton: true,
   toggleSelected: true,
-  // inline: true,
+  dateFormat: "d M",
   onShow: function(inst, animationCompleted) {
     const todayBtn = inst.nav.$buttonsContainer[0].firstChild;
     console.log(todayBtn);
